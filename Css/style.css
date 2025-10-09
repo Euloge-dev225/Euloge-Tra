@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    padding: 10px 20px;
+    background-color: rgb(7, 7, 8);
+   position: fixed;   /* reste collé */
+    top: 0;
+    left: 0;
+    width: 100%; 
+   z-index: 1000; }
+.title-rg{
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color:#333;
+}
+#title-home{
+    text-decoration: none;
+    color: #333;
+}
+#title-home:hover{
+    color: #9b9999;
+}
+#home {
+  scroll-margin-top: 80px; /* ajuste selon la hauteur de ton header */
+}
+.description{
+    padding-top: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+.description h2{
+    display: flex;
+    justify-content: center;
+     max-width: 700px;
+     color: #333; 
+    
+}
+.description img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.heroSocial{
+     transform: translateX(20px);
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+   
+    
+}
+.heroSocial-link{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding-right: 10px;
+   margin-top: -40px;
+   transition: background-color 0.3s, color 0.3s;
+   
+   
+}
+#linke{
+  color: rgb(41, 102, 188);
+}
+#linkee:hover{
+   color: rgb(41, 102, 188);;
+}
+#git{
+  color: rgb(212, 212, 212)
+}
+#gitt:hover{
+   color: rgb(212, 212, 212);
+}
+#twitt{
+  color: rgb(29, 155, 240);
+}
+#twit:hover{
+   color: rgb(29, 155, 240);
+}
+#insta{
+  color: rgb(193, 53, 132);
+}
+#inst:hover{
+   color: rgb(193, 53, 132);
+}
+
+.nav-link-styled{
+    padding: 10px;
+    gap: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-link-styled:hover,.nav-link-styled:active{
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+.section{
+    flex-direction: column;
+    align-items: center;  
+    display: flex;
+    justify-content: center;
+    
+}
+.section-description{
+   
+    font-size: 18px;
+     max-width: 700px; 
+     color: rgb(255, 253, 253);
+    line-height: 1.6;
+    margin: 0 auto; 
+     text-indent: 0;
+    white-space: normal;
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+   
+   
+}
+.section-title{
+    padding-top: 70px;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color:#333;
+  margin-bottom: 15px;   /* espace entre titre et paragraphe */
+  
+    
+}
+.section-projects{
+     font-size: 18px;
+     max-width: 700px; 
+    color: rgb(255, 253, 253);
+    line-height: 1.6;
+    margin: 0 auto; 
+     text-indent: 0;
+    white-space: normal;
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.project-item1{
+   
+   margin-top: 30px;
+    padding: 20px;
+   
+}
+.project-item2{
+   
+   margin-top: 30px;
+    padding: 20px;
+   
+}
+.project-item2 a{
+   
+    color: #333;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.project-item2 a:hover {
+    background-color: #b69e9e;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.project-item2 video{
+    cursor: pointer;
+}
+.project-item3{
+    margin-top: 30px;
+     padding: 20px;
+}
+.title-project{
+  color: #333;
+}
+#Hr{
+  color: #333;
+
+
+}
+#care{
+   color: rgb(206, 206, 36);
+}
+#down{
+    color: rgb(136, 130, 130);
+}
+.imgRH #img1,#img2{
+    margin: 4px;
+    border: #333 solid 1px;
+    
+}
+#img1{box-shadow:
+  -3px 3px rgb(68, 66, 66);}
+#img2{box-shadow:
+   3px 3px rgb(68, 66, 66);}
+  #img1:hover{
+    box-shadow:3px 3px rgb(68, 66, 66),
+    -1em 0 0.4em rgb(141, 141, 136) ;
+  }
+  #img2:hover{
+    box-shadow:
+     -3px 3px rgb(68, 66, 66),        /* grise en bas à gauche */
+    1em 0 0.4em rgb(141, 141, 136) ;
+  }
+  .project-item3 video{
+    cursor: pointer;
+  }
+  .contact-form{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 auto;
+    gap: 15px;
+  background: white;
+   width: 800px;
+  border-radius: 5px;
+  margin-top: 100px;
+   box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+   
+  }
+  .contact-form input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f0f0f0;
+    font-weight: 600;
+  }
+  .contact-form label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .contact-form textarea{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f0f0f0;
+    font-weight: 600;
+    resize: vertical; /* Permet de redimensionner verticalement */
+    min-height: 100px; /* Hauteur minimale */
+  }
+  .contact-form button{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+    .contact-form button:hover{
+    background-color: #555;
+  }
+  #contacts p{
+    text-align: center;
+    padding-top: 30px;
+    font-family: Helvetica Neue,sans-serif;
+      color: rgb(143, 143, 143);
+     font-size: 18px;
+  }
+  .contact-title{
+    text-align: center;
+  }
+  #contacts{
+    background-color: black;
+    width: 100%;
+   height: 100%;
+  background-image:none;
+  }
+  #contacts h3{
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  
+    color: rgb(143, 143, 143);
+    padding-top: 30px;
+    margin-top: 20px;
+  }
+  
+  .foot{
+    display: flex;
+    justify-content: space-around; 
+    padding: 10px 20px;
+  }
+  .outro{
+    text-align: left;
+    margin-right: 50px;
+    margin-top: 30px;
+    }
+  .description-foot{
+    text-align: center;
+    margin-top: 130px;
+    color :rgb(143, 143, 143);
+    font-size: 14px;
+  }
+  .description-foot a{
+    color :rgb(143, 143, 143);
+  }
+  .outro-description{
+    color:  rgb(143, 143, 143);
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .footer{
+    background-color:rgb(7, 7, 8);
+    
+    padding-top: 20px;
+    
+    
+  }
+  .nav-foot{
+    gap :25px;
+    margin-top: 30px;
+  }
+  .heroSocialFoot{
+    gap :50px;
+    margin-top:30px;
+    color :rgb(143, 143, 143);
+    flex-wrap: wrap; 
+    
+  }
+  main{
+    flex: 1;
+  }
+  html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+}
+body{
+    background-image: url("/home/zenkyle225/Downloads/c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+   
+}
+#error{
+  color: red;
+  font-weight: bold;
+ 
+  text-align: right;
+  transform: translateY(20px);
+}
+ .myvideo1,.myvideo2{
+            display: block;
+  margin: 10px auto; /* centre horizontalement */
+  max-width: 100%;}
+.imglog,.imghome{
+    display: block;
+  margin: 0 auto;  /* centre horizontalement */
+  max-width: 100%; /* évite qu’elle déborde en responsive */
+  height: auto;
+}
+.imghome{
+    transform: translateY(40px);
+}
+.myvideo2{
+    transform: translateY(45px);
+}
+.myvideo1{
+    transform: translateY(20px);
+}
+
+.imgfull-home,.imgfull-log{
+  width: 100%;    /* prend toute la largeur dispo dans le modal */
+  max-width: 800px; /* tu limites si tu veux */
+  height: auto;
+}
+.navbar-bootstrap {
+  
+  display: none;
+   background-color: rgb(7, 7, 8);
+}
+.navbar-toggler:hover,.navbar-toggler:focus {
+  background-color: rgb(7, 7, 8); /* même couleur au survol */
+  box-shadow: none;         /* supprime l’ombre au focus */
+}
+.navbar-toggler:active{
+  background-color: rgb(78, 78, 78);
+  box-shadow: #3a3939;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#offcanvasMenu {
+  width: 200px;
+     /* largeur réduite */
+     height: 30vh;  
+}
+.offcanvas {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+#only{
+  color: #333;
+}

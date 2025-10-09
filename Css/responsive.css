@@ -1,0 +1,680 @@
+@media screen and (max-width:1170px){
+   body{
+
+   background-position: center;
+   }
+
+    
+}
+/*Responsive CSS for tablette*/
+@media screen and (max-width:992px) {
+    .description h2{
+        font-size: 20px;
+        
+    }
+    h2 span{
+       white-space: pre-line;
+        
+    }
+   #titre2{
+    transform: translateY(-10px);
+   }
+    #title-home{
+        font-size: 0.8em;
+    }
+    .heroSocial{
+     transform: translate(70px,-20px);
+        gap: 5px;
+    }
+    
+    #git,#insta,#linke,#twitt{
+        font-size: 14px;
+    }
+    .section-main{
+        display: flex;
+        flex-direction: column;
+       max-width: 700px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    #contacts{
+        background-color: black;
+   width: 100%;
+   height: 100%;
+  background-image:none;
+  
+    
+    }
+    .contact-form{
+        width: 500px;
+        margin: auto;
+        
+        height: auto;
+        
+        }
+        #contacts p{
+            transform: translateY(-20px);
+            font-size: 20px;
+            color: rgb(255, 253, 253);
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+    body{
+        margin: 0;
+        padding: 0;
+        background-position: center;
+        
+       
+    }
+    html{
+        margin: 0;
+        padding: 0;
+    }
+  #Hr{
+    color: #333;
+  }
+  .nav-link-styled:hover{
+    border: none;
+    color: #333;
+    background-color: transparent;
+  }
+  .nav-link-styled:active{
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#title-home:hover{
+    color: #333;
+}
+#title-home:active{
+    color: #9b9999;
+}
+#linkee:hover{
+   color:  #333;
+}
+#gitt:hover{
+   color:  #333;
+}
+#twit:hover{
+   color:  #333;
+}
+#inst:hover{
+   color: #333;
+}
+#linkee:active{
+   color: rgb(41, 102, 188);;
+}
+#gitt:active{
+   color: rgb(212, 212, 212);
+}
+#twit:active{
+   color: rgb(29, 155, 240);
+}
+#inst:active{
+   color: rgb(193, 53, 132);
+}
+.project-item2 a:hover {
+    background-color: black;
+    color: #333;
+    border: none;
+}
+.project-item2 a:active {
+    background-color: #b69e9e;
+    color: #fff;
+    border-radius: 5px;
+}
+
+}
+/*Responsive CSS for mini tablette or big mobile*/
+@media screen  and (max-width:768px) {
+    body{
+        background-image:none;
+        background-color: black;
+        width: 100%;
+    }
+    .section-description,.section-projects{
+        max-width: 550px;
+        width: 100%;
+         
+    }
+    .section{
+  /*  flex-direction: column;
+    align-items: center;  
+    display: flex;
+    justify-content: center;*/
+     flex-wrap: wrap;
+     
+    
+}
+/*ul {
+  list-style: none; /* supprime les puces par défaut 
+  padding: 0;
+}*/
+
+#contacts{
+    background-color: black;
+}
+html,body{
+    overflow-x: hidden;
+}
+}
+@media screen and (max-width:576px) {
+    .contact-form{
+        width: 100%;
+        max-width:400px ;
+        height: 500px;
+        padding: 10;
+    }
+    
+    .section-main{
+        max-width: 400px;
+    }
+   .nav-top{
+    display: none;
+   }
+   .navbar-bootstrap {
+    display: block; /* afficher la nav bootstrap */
+  }
+  .header {
+justify-content: space-between};   
+.header h1{
+    transform: translateX(30px);
+}
+}
+@media screen and (max-width:510px) 
+{
+     h2 span{
+        font-size: 1rem;
+       white-space: pre-line;
+       transform: translateY(20px);
+        
+    }
+    #git,#insta,#linke,#twitt{
+        font-size: 13px;
+    }
+    .heroSocial-link{
+        font-size: 14px;
+    }
+    .heroSocial{
+     transform: translate(70px,-13px);
+        gap: 2px;
+    }
+     .section-main{
+        max-width: 350px;
+    }
+     #contacts p{
+        font-size: 15px;
+        max-width: 250px;
+    }
+    .contact-form{
+        
+        max-width:350px ;
+        
+    }
+    #contacts h3{
+        font-size: 30px;
+    }
+    
+   html, body{
+        overflow-x: hidden;
+    }
+   .section-description,.section-projects{
+    font-size: 15px;
+   }
+
+}
+@media screen and (max-width:460px) 
+{
+     h2 span{
+        font-size: 1rem;
+       white-space: pre-line;
+       transform: translateY(20px);
+        
+    }
+    #git,#insta,#linke,#twitt{
+        font-size: 15px;
+    }
+    .heroSocial-link{
+        font-size: 12px;
+        
+    }
+     .section-main{
+        max-width: 350px;
+    }
+    
+   .contact-form{
+    padding: auto;
+    width: 100%;
+    transform: translateY(-70px);
+    max-width: 300px;
+    max-height: 300px;   /* limite de hauteur */
+    margin: 0 auto;
+    gap: 5px;
+    background: white;
+    margin-top: 100px;
+  
+   
+  }
+  .contact-form input{
+    padding: auto;
+    font-size: 10px;
+   
+    font-weight: 400;
+  }
+  .contact-form label{
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  .contact-form textarea{
+    padding: auto;
+    font-size: 10px;
+   
+   
+    font-weight: 400;
+    resize: vertical; /* Permet de redimensionner verticalement */
+    min-height: 40px; /* Hauteur minimale */
+  }
+  .contact-form button{
+    padding: auto;
+    font-size: 10px;
+   
+  }
+  
+}
+    @media screen and (max-width:423px) {
+        .section-main{
+        max-width: 280px;
+    }
+    .title-rg{
+        font-size: 25px;
+    }
+    .navbar-bootstrap {
+  transform: translateY(-5px); /* remonte de 20px */
+}
+    .nav-link-styled{
+        font-size: 14px;
+    }
+     h2 span{
+        font-size: 14px;
+        max-width: 300px;
+    }
+    #git,#insta,#linke,#twitt{
+        font-size: 14px;
+      
+    }
+    .heroSocial{
+        gap: 0px;
+        transform: translate(55px,-18px);
+     
+     
+     
+    }
+   .heroSocial .heroSocial-link{
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+        gap: 2px;
+      
+    }
+    .navbar-toggler {
+  width: 20px;       /* largeur du bouton */
+  height: 20px;      /* hauteur du bouton */
+  padding: 0; }
+  .navbar-toggler-icon {
+  width: 23px;       /* largeur de l’icône */
+  height: 25px; }
+}
+    @media screen and (max-width:350px) {
+        
+       
+         .contact-form{
+    padding: 20px;
+    transform: translateY(-70px);
+    max-width: 200px;
+    max-height: 270px;   /* limite de hauteur */
+    margin: 0 auto;
+    gap: 5px;
+    background: white;
+    margin-top: 100px;
+  
+   
+  }
+  .contact-form input{
+    padding: auto;
+    font-size: 10px;
+   height: auto;
+    font-weight: 400;
+  }
+  .contact-form label{
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  .contact-form textarea{
+    padding: auto;
+    font-size: 10px;
+   height: auto;
+  
+    font-weight: 400;
+    resize: vertical; /* Permet de redimensionner verticalement */
+    min-height: 40px; /* Hauteur minimale */
+  }
+  .contact-form button{
+    padding: auto;
+    font-size: 10px;
+    height: 35px;
+    margin-top: 10px;
+   
+  }
+    
+         h2 span{
+        font-size: 14px;
+        max-width: 300px;
+    }
+     .heroSocial {
+        transform: translate(15px,20px);
+       
+     }
+   
+    }
+
+ @media screen and (max-width:310px){
+    .section-description,.section-projects{
+        max-width: 250px;}
+        .section-title{
+            font-size: 20px;
+        }
+       
+        
+  .navbar-toggler-icon {
+  width: 20px;       /* largeur de l’icône */
+  height: 20px; }
+
+        
+ }
+ @media screen and (max-width:255px){
+    .heroSocial{
+        display: none;
+    }
+    .section-description,.section-projects{
+        max-width: 200px;}
+       
+        .contact-form{
+    padding: auto;
+    transform: translateY(-70px);
+    max-width: 150px;
+    max-height: 230px;   /* limite de hauteur */
+    margin: 0 auto;
+    gap: 5px;
+    background: white;
+    margin-top: 100px;
+  
+   
+  }
+  .contact-form input,
+.contact-form textarea {
+  box-sizing: border-box; /* inclut padding et border dans height */
+}
+  .contact-form input{
+    padding: auto;
+    font-size: 10px;
+   height: 10px;
+   width: 95%;
+    font-weight: 400;
+  }
+  .contact-form label{
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  .contact-form textarea{
+    padding: auto;
+    font-size: 10px;
+   font-weight: 400;
+    resize: vertical; /* Permet de redimensionner verticalement */
+    min-height: 35px; /* Hauteur minimale */
+  }
+  .contact-form button{
+    padding: auto;
+    font-size: 10px;
+   
+  }
+.section-description,.section-projects{
+    font-size: 10px;}    
+.section-title{
+    font-size: 16px;
+}
+.heroSocialFoot{
+    font-size: 10px;
+}
+ .navbar-toggler-icon {
+  width: 15px;       /* largeur de l’icône */
+  height: 15px; }
+ }
+ @media screen and (max-width:205px){
+   
+    .section-description,.section-projects{
+        max-width: 140px;}
+       
+        .contact-form{
+    padding: auto;
+    transform: translateY(-70px);
+    max-width: 100px;
+    max-height: 230px;   /* limite de hauteur */
+    margin: 0 auto;
+    gap: 5px;
+    background: white;
+    margin-top: 100px;
+  
+   
+  }
+  .contact-form input,
+.contact-form textarea {
+  box-sizing: border-box; /* inclut padding et border dans height */
+}
+  .contact-form input{
+    padding: auto;
+    font-size: 6px;
+   height: 10px;
+   width: 75%;
+    font-weight: 300;
+  }
+  .contact-form label{
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  .contact-form textarea{
+    padding: auto;
+    font-size: 6px;
+   font-weight: 300;
+    resize: vertical; /* Permet de redimensionner verticalement */
+    min-height: 35px; /* Hauteur minimale */
+  }
+  .contact-form button{
+    padding: auto;
+    font-size: 10px;
+   
+  }
+.section-description,.section-projects{
+    font-size: 8px;}    
+.section-title{
+    font-size: 10px;
+}
+.heroSocialFoot{
+    font-size: 7px;
+}
+ .navbar-toggler-icon {
+  width: 12px;       /* largeur de l’icône */
+  height: 12px; }
+  footer h4{
+    font-size: 10px;
+  }
+  .outro-description{
+    font-size: 8px;
+  }
+  .description-foot{
+    font-size: 6px;
+  }
+  #contacts h3{
+    font-size: 15px;
+  }
+  #contacts p{
+    font-size: 7px;
+  }
+   h2 span{
+    font-size: 9px;
+  }
+  .title-rg{
+    font-size: 12px;
+  }
+ }
+ @media screen and (max-width:150px) {
+  h2 {
+    display: flex;            /* active flexbox */
+  flex-direction: column;   /* empile les enfants verticalement */
+  align-items: center;      /* centre horizontalement */
+  text-align: center;       /* centre le texte des divs internes */
+  gap: 3px; 
+  }
+  .section-description {
+    font-size: 1px;
+    display: flex;            /* active flexbox */
+  flex-direction: column;   /* empile les enfants verticalement */
+  align-items: center;      /* centre horizontalement */
+  text-align: center;       /* centre le texte des divs internes */
+  gap: 3px; 
+  }
+  body, .section-description, .section-projects, .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+  body {
+    overflow-x: hidden; /* évite le scroll horizontal */
+  }
+
+  img, #home {
+    width: 60px; /* photo réduite */
+    height: auto;
+  }
+
+  .contact-form {
+    width: 130px;
+    max-height: 220px;
+    transform: translateY(-70px);
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 55%;
+    height: 200px;
+    font-size: 7px;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+
+  .contact-form textarea {
+    min-height: 35px;
+  }
+
+  .contact-form button {
+    font-size: 6px;
+    padding: 5px;
+    width: 40px;
+  }
+
+  .section-description,
+  .section-projects {
+    font-size: 5px;
+    max-width: 100px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 8px;
+  }
+
+  .heroSocialFoot {
+    font-size: 9px;
+  }
+
+  .navbar-toggler-icon {
+    width: 15px;
+    height: 15px;
+  }
+  body {
+    transform: scale(0.8);
+    transform-origin: top center;
+  }
+  #link-game,.project-item2 span{
+    font-size: 12px;
+  }
+  .foot{
+     display: flex;            /* active flexbox */
+  flex-direction: column;   /* empile les enfants verticalement */
+  align-items: center;      /* centre horizontalement */
+  text-align: center;       /* centre le texte des divs internes */
+  gap: 3px; 
+  }
+  .outro-description{
+    
+  font-size: 5px;
+  }
+  .outro{
+    display: flex;
+    flex-direction: column;   /* empile les enfants verticalement */
+  align-items: center;      /* centre horizontalement */
+  text-align: center; 
+  justify-content: center;
+  position: relative;
+  left: 20px;
+  }
+  .description-foot{
+    display: flex;
+    flex-direction: column;   /* empile les enfants verticalement */
+  align-items: center;      /* centre horizontalement */
+  text-align: center; 
+  justify-content: center;
+  font-size: 5px;
+  }
+  .title-rg{
+    font-size: 10px;
+  }
+  footer h4{
+     display: flex;
+    flex-direction: column;   /* empile les enfants verticalement */
+  align-items: center;      /* centre horizontalement */
+  text-align: center; 
+  justify-content: center;
+  font-size: 6px;
+  }
+  .heroSocial-link{
+    font-size: 6px;
+    gap: 1px;
+  }
+  .nav-foot{
+     display: flex;
+    flex-direction: column;   /* empile les enfants verticalement */
+  align-items: center;      /* centre horizontalement */
+  text-align: center; 
+  justify-content: center;
+  }
+}
+
+  
+ 
+ @media (orientation: landscape) and (max-height: 500px) {
+  body {
+    background-image: none;
+  }
+}
