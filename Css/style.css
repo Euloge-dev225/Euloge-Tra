@@ -138,7 +138,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
-  color:#333;
+  color:rgb(143, 143, 143);
   margin-bottom: 15px;   /* espace entre titre et paragraphe */
   
     
@@ -350,7 +350,7 @@
     padding: 0;
 }
 body{
-    background-image: url("/home/zenkyle225/Downloads/c.jpg");
+    background-image: url("c.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;

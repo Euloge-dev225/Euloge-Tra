@@ -129,16 +129,21 @@
 }
 /*Responsive CSS for mini tablette or big mobile*/
 @media screen  and (max-width:768px) {
+  *{
+    box-sizing: border-box;
+  }
     body{
         background-image:none;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         width: 100%;
+        min-height: 100vh;
     }
     .section-description,.section-projects{
         max-width: 550px;
         width: 100%;
          
     }
+    
     .section{
   /*  flex-direction: column;
     align-items: center;  
@@ -156,9 +161,7 @@
 #contacts{
     background-color: black;
 }
-html,body{
-    overflow-x: hidden;
-}
+
 }
 @media screen and (max-width:576px) {
     .contact-form{
@@ -191,6 +194,9 @@ justify-content: space-between};
        transform: translateY(20px);
         
     }
+    .project-item2 a{
+      font-size: 14px;
+    }
     #git,#insta,#linke,#twitt{
         font-size: 13px;
     }
@@ -217,9 +223,7 @@ justify-content: space-between};
         font-size: 30px;
     }
     
-   html, body{
-        overflow-x: hidden;
-    }
+   
    .section-description,.section-projects{
     font-size: 15px;
    }
@@ -533,52 +537,71 @@ justify-content: space-between};
     font-size: 12px;
   }
  }
- @media screen and (max-width:150px) {
-  h2 {
-    display: flex;            /* active flexbox */
-  flex-direction: column;   /* empile les enfants verticalement */
-  align-items: center;      /* centre horizontalement */
-  text-align: center;       /* centre le texte des divs internes */
-  gap: 3px; 
-  }
-  .section-description {
-    font-size: 1px;
-    display: flex;            /* active flexbox */
-  flex-direction: column;   /* empile les enfants verticalement */
-  align-items: center;      /* centre horizontalement */
-  text-align: center;       /* centre le texte des divs internes */
-  gap: 3px; 
-  }
-  body, .section-description, .section-projects, .contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
+ @media screen and (max-width: 150px) {
 
-
-  body {
-    overflow-x: hidden; /* évite le scroll horizontal */
+  /* Structure globale */
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 
+  h2,
+  .section-description,
+  .foot,
+  .outro,
+  .description-foot,
+  footer h4,
+  .nav-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+  }
+
+  /* Images */
   img, #home {
-    width: 60px; /* photo réduite */
+    width: 70%;
     height: auto;
+    border-radius: 5px;
   }
 
+  /* Titres et textes */
+  h2 {
+    font-size: 10px;
+  }
+
+  .section-title {
+    font-size: 8px;
+  }
+
+  .section-description,
+  .section-projects,
+  .outro-description,
+  .description-foot {
+    font-size: 7px;
+    width: 90%;
+    max-width: 120px;
+    text-align: center;
+  }
+
+  /* Formulaire de contact */
   .contact-form {
-    width: 130px;
-    max-height: 220px;
-    transform: translateY(-70px);
-    gap: 5px;
+    width: 90%;
+    max-width: 130px;
     padding: 5px;
+    gap: 5px;
   }
 
   .contact-form input,
   .contact-form textarea {
-    width: 55%;
-    height: 200px;
-    font-size: 7px;
+    width: 100%;
+    font-size: 8px;
     padding: 3px;
     box-sizing: border-box;
   }
@@ -588,86 +611,32 @@ justify-content: space-between};
   }
 
   .contact-form button {
-    font-size: 6px;
-    padding: 5px;
-    width: 40px;
-  }
-
-  .section-description,
-  .section-projects {
-    font-size: 5px;
-    max-width: 100px;
-    text-align: center;
-  }
-
-  .section-title {
     font-size: 8px;
+    padding: 5px;
+    width: 60%;
+  }
+
+  /* Réseaux sociaux et pied de page */
+  .heroSocial-link {
+    font-size: 7px;
+    gap: 2px;
   }
 
   .heroSocialFoot {
+    font-size: 8px;
+  }
+
+  .title-rg {
     font-size: 9px;
   }
 
-  .navbar-toggler-icon {
-    width: 15px;
-    height: 15px;
+  footer h4 {
+    font-size: 7px;
   }
-  body {
-    transform: scale(0.8);
-    transform-origin: top center;
-  }
-  #link-game,.project-item2 span{
-    font-size: 12px;
-  }
-  .foot{
-     display: flex;            /* active flexbox */
-  flex-direction: column;   /* empile les enfants verticalement */
-  align-items: center;      /* centre horizontalement */
-  text-align: center;       /* centre le texte des divs internes */
-  gap: 3px; 
-  }
-  .outro-description{
-    
-  font-size: 5px;
-  }
-  .outro{
-    display: flex;
-    flex-direction: column;   /* empile les enfants verticalement */
-  align-items: center;      /* centre horizontalement */
-  text-align: center; 
-  justify-content: center;
-  position: relative;
-  left: 20px;
-  }
-  .description-foot{
-    display: flex;
-    flex-direction: column;   /* empile les enfants verticalement */
-  align-items: center;      /* centre horizontalement */
-  text-align: center; 
-  justify-content: center;
-  font-size: 5px;
-  }
-  .title-rg{
-    font-size: 10px;
-  }
-  footer h4{
-     display: flex;
-    flex-direction: column;   /* empile les enfants verticalement */
-  align-items: center;      /* centre horizontalement */
-  text-align: center; 
-  justify-content: center;
-  font-size: 6px;
-  }
-  .heroSocial-link{
-    font-size: 6px;
-    gap: 1px;
-  }
-  .nav-foot{
-     display: flex;
-    flex-direction: column;   /* empile les enfants verticalement */
-  align-items: center;      /* centre horizontalement */
-  text-align: center; 
-  justify-content: center;
+
+  #link-game,
+  .project-item2 span {
+    font-size: 9px;
   }
 }
 
