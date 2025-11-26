@@ -1,3 +1,6 @@
+
+
+
 @media screen and (max-width:1170px){
    body{
 
@@ -138,6 +141,22 @@
         width: 100%;
         min-height: 100vh;
     }
+    body.light-mode::before{
+      background-image: none;
+
+    }
+    body.light-mode .section-title,body.light-mode .section-description{
+      color: #000000;
+    }
+    body.light-mode .description h2{
+      color: #000000;
+    }
+    body.light-mode .heroSocial-link{
+      color: #000000;
+    }
+    body.light-mode #git{
+      color: #000000;
+    }
     .section-description,.section-projects{
         max-width: 550px;
         width: 100%;
@@ -163,6 +182,11 @@
 }
 
 }
+@media screen and (max-width:700px){
+  .nav-top{
+    gap: 2px;
+  }
+} 
 @media screen and (max-width:576px) {
     .contact-form{
         width: 100%;
@@ -184,6 +208,10 @@
 justify-content: space-between};   
 .header h1{
     transform: translateX(30px);
+}
+#error{
+  font-size: xx-small;
+  transform: translateY(5px);
 }
 }
 @media screen and (max-width:510px) 
@@ -286,6 +314,13 @@ justify-content: space-between};
     font-size: 10px;
    
   }
+  .mode{
+    padding: 2px;
+  }
+  .container-fluid{
+    position: relative;
+    padding: 2px;
+  }
   
 }
     @media screen and (max-width:423px) {
@@ -331,7 +366,15 @@ justify-content: space-between};
   .navbar-toggler-icon {
   width: 23px;       /* largeur de l’icône */
   height: 25px; }
+  .container-fluid .mode {
+  
+  top: 4px;
+  right: 10px;
+ 
 }
+}
+
+
     @media screen and (max-width:350px) {
         
        
@@ -339,7 +382,7 @@ justify-content: space-between};
     padding: 20px;
     transform: translateY(-70px);
     max-width: 200px;
-    max-height: 270px;   /* limite de hauteur */
+    max-height: 300px;   /* limite de hauteur */
     margin: 0 auto;
     gap: 5px;
     background: white;
@@ -397,9 +440,23 @@ justify-content: space-between};
   .navbar-toggler-icon {
   width: 20px;       /* largeur de l’icône */
   height: 20px; }
-
+.mode .fa-moon{
+    bottom: 3px;
+  font-size: x-small;
+  padding: 3px;
+}
+.mode .fa-sun{
+    bottom: 3px;
+  
+  font-size:x-small;
+  padding: 3px;
+}
+.container-fluid .mode {
+  top: 2px
+}
         
  }
+
  @media screen and (max-width:255px){
     .heroSocial{
         display: none;
@@ -411,7 +468,7 @@ justify-content: space-between};
     padding: auto;
     transform: translateY(-70px);
     max-width: 150px;
-    max-height: 230px;   /* limite de hauteur */
+    max-height: 270px;   /* limite de hauteur */
     margin: 0 auto;
     gap: 5px;
     background: white;
@@ -458,6 +515,10 @@ justify-content: space-between};
  .navbar-toggler-icon {
   width: 15px;       /* largeur de l’icône */
   height: 15px; }
+  .mode{
+    position: relative;
+  }
+
  }
  @media screen and (max-width:205px){
    
@@ -536,7 +597,18 @@ justify-content: space-between};
   .title-rg{
     font-size: 12px;
   }
+  .mode .fa-moon{
+    bottom: 1px;
+  font-size: xx-small;
+  padding: 1px;
  }
+ .mode .fa-sun{
+    bottom: 1px;
+  
+  font-size:xx-small;
+  padding: 1px;
+ }
+}
  @media screen and (max-width: 150px) {
 
   /* Structure globale */

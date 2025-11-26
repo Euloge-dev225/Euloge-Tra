@@ -80,5 +80,59 @@ document.querySelectorAll('#offcanvasMenu .nav-link').forEach(link => {
     if(bsOffcanvas) bsOffcanvas.hide();
   });
 });
+// Mode sombre ou clair
+let darkMode=true; // par défaut le mode sombre est activé
+
+const modeButtons = document.querySelectorAll('.mode');
+// Fonction pour mettre à jour les icônes de TOUS les boutons
+function updateIcons() {
+    modeButtons.forEach(button => {
+        const sunIcon = button.querySelector('.fa-sun');
+        const moonIcon = button.querySelector('.fa-moon');
+        
+        if (darkMode) {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+        } else {
+            moonIcon.style.display = 'block';
+            sunIcon.style.display = 'none';
+        }
+    });
+}
+
+// Ajouter l'événement click à TOUS les boutons
+modeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        if (darkMode) {
+            document.body.classList.add('light-mode');
+            darkMode = false;
+        } else {
+            document.body.classList.remove('light-mode');
+            darkMode = true;
+        }
+        
+        // Mettre à jour les icônes de tous les boutons
+        updateIcons();
+    });
+});
+
+// Initialiser les icônes au chargement
+updateIcons();
+
+window.addEventListener("scroll", () => {
+    if (!document.body.classList.contains("light-mode")) return;
+
+    const scrollY = window.scrollY;
+
+    // Fade progressif (augmente jusqu'à 1 pour disparition complète)
+    const opacity = Math.min(scrollY / 500, 1);
+    document.documentElement.style.setProperty("--overlay-opacity", opacity);
+
+    // Zoom-out appliqué au ::before (réduit jusqu'à 0.85)
+    const scale = Math.max(1 - scrollY / 1500, 0.85);
+    document.documentElement.style.setProperty("--scale-overlay", scale);
+});
+
+
 
   

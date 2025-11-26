@@ -47,22 +47,38 @@
 <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
 <body class="dark">
+   
     <main>
     <div class="header">
+         
         <h1 class="title-rg"><a href="https://euloge-dev225.github.io/Euloge-Tra/" id="title-home">Tra Bi Euloge</a></h1> 
+       
         <div class="nav-top">
+            <a href="#home" class="nav-link-styled">Home</a>
             <a href="#about" class="nav-link-styled">About</a>
             <a href="#projects" class="nav-link-styled">Project</a>
             <a href="#contacts" class="nav-link-styled">Contact</a>
+             <button class="mode" >
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
         </div>
+       
+        
         <!-- Navbar Bootstrap + Offcanvas (petit écran) -->
   <nav class="navbar navbar-expand-sm  navbar-bootstrap">
     <div class="container-fluid">
+         <button class="mode" >
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+        </button>
       <!-- Bouton hamburger pour offcanvas -->
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
+     
     </div>
+
   </nav>
 
   <!-- Offcanvas menu -->
@@ -73,6 +89,7 @@
     </div>
     <div class="offcanvas-body">
       <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#contacts">Contact</a></li>
@@ -104,8 +121,9 @@
                 <p>If you’d like to connect, I’m most responsive on GitHub and LinkedIn.</p>
         </div>
         </section>
+        
         <section id="projects">
-            <h3 class="section-title"> My projects</h3>
+            <h3 class="section-title" id="project"> My projects</h3>
             <div class="section-projects">
                 <ul>
                     <li class="project-item1">
