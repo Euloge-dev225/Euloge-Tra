@@ -453,6 +453,9 @@ body{
   align-items: center;
   gap: 30px;
 }
+#skills h3{
+  color: rgb(143, 143, 143);
+}
 /* Styles du hamburger en mode clair */
 body.light-mode .navbar-bootstrap {
     background-color: #d6d4d4; /* fond clair pour la navbar */
@@ -574,7 +577,7 @@ body.light-mode #project{
     background-color: #ebe5e5;
    
   }
-  body.light-mode #contacts h3{
+  body.light-mode #contacts h3,body.light-mode #skills h3{
   
   
     color: rgb(0, 0, 0);

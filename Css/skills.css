@@ -1,0 +1,274 @@
+/* Expertise Section - Adapté au style existant */
+#skills {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.expertise-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: "Roboto Slab", serif;
+}
+
+.skill-item {
+    padding: 15px 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-3px);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.skill-name {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(255, 253, 253);
+    letter-spacing: 0.025em;
+}
+
+.skill-percentage {
+    font-size: 16px;
+    color: #858181;
+    font-weight: 600;
+}
+
+.skill-bar-bg {
+    height: 2px;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: #858181;
+    transition: width 1.5s ease-out;
+    border-radius: 2px;
+}
+
+.skill-category {
+    font-size: 12px;
+    color: #858181;
+    margin-top: 6px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Mode clair */
+body.light-mode .skill-name {
+    color: #000000;
+}
+
+body.light-mode .skill-percentage {
+    color: #4b5563;
+}
+
+body.light-mode .skill-bar-bg {
+    background-color: #e5e7eb;
+}
+
+body.light-mode .skill-bar-fill {
+    background-color: #000000;
+}
+
+body.light-mode .skill-category {
+    color: #6b7280;
+}
+/* Expertise Responsive */
+
+/* Desktop - 2 colonnes */
+@media screen and (min-width: 993px) {
+    .expertise-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Tablette */
+@media screen and (max-width: 992px) {
+    .expertise-container {
+        max-width: 600px;
+        gap: 25px;
+    }
+    
+    .skill-name {
+        font-size: 16px;
+    }
+    
+    .skill-percentage {
+        font-size: 14px;
+    }
+}
+
+/* Mini tablette / Grand mobile */
+@media screen and (max-width: 768px) {
+    .expertise-container {
+        max-width: 550px;
+        gap: 20px;
+    }
+    
+    .skill-item {
+        padding: 12px 15px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+    .expertise-container {
+        max-width: 400px;
+        gap: 18px;
+    }
+    
+    .skill-name {
+        font-size: 14px;
+    }
+    
+    .skill-percentage {
+        font-size: 13px;
+    }
+    
+    .skill-category {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .expertise-container {
+        max-width: 350px;
+    }
+    
+    .skill-name {
+        font-size: 13px;
+    }
+    
+    .skill-percentage {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .expertise-container {
+        max-width: 300px;
+        gap: 15px;
+    }
+    
+    .skill-item {
+        padding: 10px;
+    }
+    
+    .skill-name {
+        font-size: 12px;
+    }
+    
+    .skill-percentage {
+        font-size: 11px;
+    }
+    
+    .skill-category {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .expertise-container {
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .expertise-container {
+        max-width: 250px;
+        gap: 12px;
+    }
+    
+    .skill-name {
+        font-size: 11px;
+    }
+    
+    .skill-percentage {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .expertise-container {
+        max-width: 230px;
+    }
+    
+    .skill-name {
+        font-size: 10px;
+    }
+    
+    .skill-category {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 255px) {
+    .expertise-container {
+        max-width: 200px;
+        gap: 10px;
+    }
+    
+    .skill-name {
+        font-size: 9px;
+    }
+    
+    .skill-percentage {
+        font-size: 9px;
+    }
+    
+    .skill-category {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 205px) {
+    .expertise-container {
+        max-width: 140px;
+    }
+    
+    .skill-name {
+        font-size: 8px;
+    }
+    
+    .skill-percentage {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 150px) {
+    .expertise-container {
+        max-width: 120px;
+        gap: 8px;
+    }
+    
+    .skill-item {
+        padding: 8px;
+    }
+    
+    .skill-name {
+        font-size: 7px;
+    }
+    
+    .skill-percentage {
+        font-size: 7px;
+    }
+    
+    .skill-category {
+        font-size: 6px;
+    }
+}
