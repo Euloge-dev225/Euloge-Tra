@@ -30,10 +30,15 @@ function validerEmail(email){
     else return true
 }
 function validerMessage(message){
-    if(message.length<10)
+    if(message.length<3)
     throw new Error("le message est trop court veuillez ressayer");
     else return true
 }
+
+    
+     emailjs.init("me5AeYBZme7zQisSl"); 
+    
+
 const form=document.querySelector("form");
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
@@ -47,11 +52,21 @@ form.addEventListener("submit",(event)=>{
   validerNom(nom);
    validerEmail(mail);
    validerMessage(msg);
+    emailjs.send("myportfolio-ID007", "template_esklwi9", {
+            name: nom,
+            email: mail,
+            message: msg
+        })
+    .then(() => {
+            alert("Message envoyé avec succès !");
     balisenom.value = "";
     baliseEmail.value = "";
-    baliseMessage.value = "";
-  location.href = `mailto:euloge.tra16@gmail.com?subject=Message from
-   ${encodeURIComponent(nom)}&body=${encodeURIComponent(msg)}`;
+    baliseMessage.value = "";})
+    .catch((error) => {
+            const errorDiv = document.getElementById("error");
+            errorDiv.textContent = "Erreur d’envoi : " + error.text;
+        });
+    
   
    }
   
